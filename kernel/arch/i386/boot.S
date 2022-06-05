@@ -27,11 +27,14 @@ boot_page_directory:
 boot_page_table1:
 	.skip 4096
 
+ 
+
 # The kernel entry point.
 .section .multiboot.text, "a"
 .global _start
 .type _start, @function
 _start:
+
 	# This code was mostly taken from here: 
 	# https://wiki.osdev.org/Higher_Half_x86_Bare_Bones
 
