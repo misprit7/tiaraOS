@@ -4,6 +4,8 @@
 #include <kernel/tty.h>
 
 void kernel_main(void) {
+
 	terminal_init();
-	printf("Hello, kernel World!\n");
+	printf("Hello from kernel space!\n");
+
 }
